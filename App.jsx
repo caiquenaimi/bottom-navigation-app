@@ -1,6 +1,5 @@
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import { StatusBar } from "expo-status-bar";
-import { Text, View } from "react-native";
 
 import Contact from "./src/screens/Contact";
 import Home from "./src/screens/Home";
