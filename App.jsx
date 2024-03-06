@@ -10,22 +10,19 @@ import { MaterialCommunityIcons } from "@expo/vector-icons";
 export default function App() {
   const Tab = createBottomTabNavigator();
   return (
-    <NavigationContainer
-    >
+    <NavigationContainer>
       <Tab.Navigator
         initialRouteName="Home"
         tabBarOptions={{
-          activeTintColor: "#e91e63",
+          activeTintColor: "#25d366",
         }}
       >
         <Tab.Screen
           name="Home"
           component={Home}
           options={{
-            tabBarLabel: "Home",
-            tabBarIcon: ({ color }) => (
-              <MaterialCommunityIcons name="home" color={color} size={26} />
-            ),
+            tabBarLabel: "Início",
+            tabBarIcon: ({color}) => <MaterialCommunityIcons name="home" color={color} size={26} />,
           }}
         />
         <Tab.Screen
@@ -33,9 +30,7 @@ export default function App() {
           component={Contact}
           options={{
             tabBarLabel: "Contact",
-            tabBarIcon: ({ color }) => (
-              <MaterialCommunityIcons name="bell" color={color} size={26} />
-            ),
+            tabBarIcon: ({color}) => <MaterialCommunityIcons name="whatsapp" color={color} size={26} />,
           }}
         />
         <Tab.Screen
@@ -43,7 +38,7 @@ export default function App() {
           component={Profile}
           options={{
             tabBarLabel: "Profile",
-            tabBarIcon: ({ color }) => (
+            tabBarIcon: ({color}) => (
               <MaterialCommunityIcons name="account" color={color} size={26} />
             ),
           }}
